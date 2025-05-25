@@ -1,11 +1,18 @@
 import Image from 'next/image';
 import classes from './page.module.css';
 import { getMeal } from '@/lib/meals';
+import { notFound } from 'next/navigation';
 
 // every component in the page.js gets an props passed by nextjs 
 
 export default function MealDetail({params}) {
   const meal = getMeal(params.mealSlug);
+
+  if(!meal) {
+    notFound();// it calls closest not-found page if not it shows defaualt page
+  }
+
+
   // adding line breaks for instructions
   meal.instructions = meal.instructions.replace(/\n/g, '<br />')
   return (

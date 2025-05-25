@@ -1,7 +1,7 @@
 export default function NotFound() {
   return (
     <main className="not-found" style={styles.main}>
-      <h1 style={styles.heading}>404 - Page Not Found</h1>
+      <h1 style={styles.heading}>MEAL NOT FOUND</h1>
       <p style={styles.message}>
         Oops! The page you're looking for doesn't exist or has been moved.
       </p>
