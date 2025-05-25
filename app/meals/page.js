@@ -2,9 +2,18 @@ import MealsGrid from '@/components/meals/meals-grid';
 import classes from './page.module.css';
 import Link from 'next/link';
 import { getMeals } from '@/lib/meals';
-export default async function MealsPage() { // we can convert an Componetn into async in NEXTJ.s but we cant do in react
+import { Suspense } from 'react';
+
+async function Meals() {
   // we are getting meals directly from the backend 
   const meals = await getMeals();
+
+  return (<MealsGrid meals={meals} />);
+
+}
+
+export default function MealsPage() { // we can convert an Componetn into async in NEXTJ.s but we cant do in react
+
   return (
     <>
       <header className={classes.header}>
@@ -20,7 +29,11 @@ export default async function MealsPage() { // we can convert an Componetn into 
         </p>
       </header>
       <main className={classes.main}>
-        <MealsGrid meals={meals} />
+        <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
+        <Meals />
+        </Suspense>
+        {/* Suspense tells Next.js:
+        “Render and send everything that’s ready. While waiting for Meals to load, show the fallback (Fetching meals...). When Meals is ready, insert it.” */}
       </main>
     </>
   );

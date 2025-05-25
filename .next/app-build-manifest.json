@@ -26,8 +26,8 @@
     "/meals/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/meals/loading.js",
-      "static/css/app/meals/loading.css"
+      "static/css/app/meals/loading.css",
+      "static/chunks/app/meals/loading.js"
     ]
   }
 }

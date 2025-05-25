@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/meals/page"],{
+self["webpackHotUpdate_N_E"]("app/meals/page",{
 
 /***/ "(app-pages-browser)/./app/meals/page.module.css":
 /*!***********************************!*\
@@ -288,11 +288,4 @@ eval(__webpack_require__.ts("\nObject.defineProperty(exports, \"__esModule\", ({
 
 /***/ })
 
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["main-app"], () => (__webpack_exec__("(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FVolumes%2FLearningLightHouse%2FCode%20Practices%2FNext-js%2FRecipe-Sharing%2Fcomponents%2Fmeals%2Fmeal-item.module.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2FVolumes%2FLearningLightHouse%2FCode%20Practices%2FNext-js%2FRecipe-Sharing%2Fcomponents%2Fmeals%2Fmeals-grid.module.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2FVolumes%2FLearningLightHouse%2FCode%20Practices%2FNext-js%2FRecipe-Sharing%2Fapp%2Fmeals%2Fpage.module.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2FVolumes%2FLearningLightHouse%2FCode%20Practices%2FNext-js%2FRecipe-Sharing%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fapp-dir%2Flink.js%22%2C%22ids%22%3A%5B%22*%22%2C%22__esModule%22%2C%22default%22%5D%7D&modules=%7B%22request%22%3A%22%2FVolumes%2FLearningLightHouse%2FCode%20Practices%2FNext-js%2FRecipe-Sharing%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fimage-component.js%22%2C%22ids%22%3A%5B%5D%7D&server=false!")));
-/******/ var __webpack_exports__ = __webpack_require__.O();
-/******/ _N_E = __webpack_exports__;
-/******/ }
-]);
+});
