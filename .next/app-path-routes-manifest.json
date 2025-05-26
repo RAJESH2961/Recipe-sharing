@@ -1,0 +1,9 @@
+{
+  "/icon.png/route": "/icon.png",
+  "/community/page": "/community",
+  "/meals/[mealSlug]/page": "/meals/[mealSlug]",
+  "/_not-found/page": "/_not-found",
+  "/meals/share/page": "/meals/share",
+  "/meals/page": "/meals",
+  "/page": "/"
+}
