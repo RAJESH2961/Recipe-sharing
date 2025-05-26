@@ -3,6 +3,15 @@ import classes from './page.module.css';
 import { getMeal } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 
+// custon metadata for the meals page
+export async function generateMetadata({params}) {
+  const meal = getMeal(params.mealSlug);
+  return {
+    title: meal.title,
+    description : meal.summary,
+  };
+} 
+
 // every component in the page.js gets an props passed by nextjs 
 
 export default function MealDetail({params}) {

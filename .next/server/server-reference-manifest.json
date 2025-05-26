@@ -1,1 +1,5 @@
-{"node":{"6059ac28b78f8ab640000651612b8d7d0cf2adec39":{"workers":{"app/meals/share/page":{"moduleId":"6087","async":false}},"layer":{"app/meals/share/page":"action-browser"}}},"edge":{},"encryptionKey":"8Q8fus+u2BkrRUO3ZcE3I6M7hQG3QXoPxo2sqFtj0Kg="}
+{
+  "node": {},
+  "edge": {},
+  "encryptionKey": "8Q8fus+u2BkrRUO3ZcE3I6M7hQG3QXoPxo2sqFtj0Kg="
+}
